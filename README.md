@@ -10,3 +10,5 @@ CVSS v4.0 proposes the User Interaction (UI) metric to be more granular. CVSS v3
 
 Table of values (8.2):
 https://www.first.org/cvss/v4.0/specification-document
+
+![alt text](https://github.com/wojwozniak/cvss_converter/blob/main/data/differencesBetweenCVSS3%264.png?raw=true)
