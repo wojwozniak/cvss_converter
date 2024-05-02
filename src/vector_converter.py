@@ -8,17 +8,10 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
     # ADD: AR, SC, SI,SA     : suplemental metric group
     # CONVERT: VC, VI, VA, UI : Exploit maturity, modified base metrics
     # 'AR:N' , 'SC:N'
-    #new_vector = 'CVSS:4.0/'
-    #properties = cvss_vector.split('/')
-    #new_vector = "CVSS:4.0/" + properties[1] + '/' + properties[2] + '/' + args[0] + '/' + properties[3] + '/' + properties[4]
-    #for x in args[1:]:
-    #    new_vector = new_vector + '/' + x
-    #c = CVSS4(new_vector)
-    #print(c.base_score)# return CVSS4(new_vector_string)
-    #return CVSS4(new_vector)
-    old_vector = cvss_vector.vector
-    prop = old_vector.split('/')
-    new_vector = 'CVSS:4.0' + '/' + '/'.join(prop[1:3])
+
+    old_vector = cvss_vector.vector # extract the vector string from the form
+    prop = old_vector.split('/') # get the properties
+    new_vector = 'CVSS:4.0' + '/' + '/'.join(prop[1:3]) # start a vector with the CVSS:4.0
     i = 0
     for key, value in kwargs.items():
         if i == 0:
@@ -26,5 +19,5 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
         else:
             new_vector = new_vector + '/' + ("{0}:{1}".format(key, value))
         i=+1
-    return new_vector
+    return CVSS4(new_vector) # .vector returns a string, we return an object
 print(score_converter(C, AT='N',VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N'))
