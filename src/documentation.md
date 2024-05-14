@@ -22,18 +22,18 @@ Change from 3.1:
 
 ## Attack Requirements (AR)
 
-### Description: 
+### Description:
 
 Prerequisite deployment and execution conditions or variables of the vulnerable system that enable the attack.
 
-### Values: 
+### Values:
 
 - None (N) - can be executed under any / most instances of the vulnerability
 
-- Present (P) - many options: 
-  - there are some prerequisites needed that are outside of attacker control 
-  - race condition 
-  - network injection 
+- Present (P) - many options:
+  - there are some prerequisites needed that are outside of attacker control
+  - race condition
+  - network injection
   - multiple attacks needed against single target
 
 ### Change from 3.1:
@@ -75,16 +75,31 @@ User Interaction (UI)
 Description:
 Values:
 Change from 3.1:
-Impact metrics:
+# Impact metrics:
+#### Distinction between vulnerable and subsequent system:
+vulnerable system -> software application, operating system, module, driver, etc. (or possibly a hardware device)
+subsequent system -> any of those examples but also includes human safety.
 Confidentiality (VC/SC)
 Description:
 Values:
 Change from 3.1:
-Integrity (VI/SI)
-Description:
-Values:
-Change from 3.1:
-Availability (VA/SA)
-Description:
-Values:
-Change from 3.1:
+## Integrity (VI/SI)
+VS - vulnerable system
+SS - subsequent system
+### Description:
+Impact to accuracy and trustworthiness of information -> it is impacted when an attacker modifies the data or rejects critical actions.
+### Values:
+        High(H) <-> complete loss of integrity or protection
+        Low(L)  <-> possibility of modification but no serious impact
+        None(N) <-> no loss (in VS) or no loss or all integrity constrainted to VS (in SS)
+Change from 3.1: distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
+## Availability (VA/SA)
+
+### Description:
+Impact to accessibility of information resources -> loss of networked services, attacks containging network bandwidth consumption, processor cycles, disc space
+### Values:
+        High(H) <-> complete loss of availability, attacker can deny access to resources of both systems. Direct, serious consequences
+        Low(L)  <-> performance is reduced or there are interruptions in resource availability, no direct consequence
+        None(N) <-> no impact (in VS) or no impact or all availability impact constrainted to VS (in SS)
+### Change from 3.1:
+distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
