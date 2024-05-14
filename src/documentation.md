@@ -38,8 +38,8 @@ Prerequisite deployment and execution conditions or variables of the vulnerable 
 
 ### Change from 3.1:
 
-It came from Attack Complexity - that metric has been split into Attack Complexity and Attack Requirements
-Similar to Low/High values there.
+It came from Attack Complexity (so it is a new-old metric) - old AC has been split into AC and AR.
+Values are similar to Low/High values from old AC.
 
 
 ## Privileges Required (PR)
