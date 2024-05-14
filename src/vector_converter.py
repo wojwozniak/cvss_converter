@@ -5,9 +5,9 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
     # we will read in the additional fields with the value null (TODO: change it)
     # DELETE: Scope (S)
     # STAYS: AV,AC, PR (?)   : confidential req, integrity req, availibility
-    # ADD: AR, SC, SI,SA     : suplemental metric group
+    # ADD: AT, SC, SI,SA     : suplemental metric group
     # CONVERT: VC, VI, VA, UI : Exploit maturity, modified base metrics
-    # 'AR:N' , 'SC:N'
+    # 'AT:N' , 'SC:N'
 
     old_vector = cvss_vector.vector # extract the vector string from the form
     prop = old_vector.split('/') # get the properties
@@ -19,5 +19,5 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
         else:
             new_vector = new_vector + '/' + ("{0}:{1}".format(key, value))
         i=+1
-    return CVSS4(new_vector) # .vector returns a string, we return an object
+    return CVSS4(new_vector).vector# .vector returns a string, we return an object
 print(score_converter(C, AT='N',VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N'))
