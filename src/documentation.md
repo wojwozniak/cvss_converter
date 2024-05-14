@@ -22,7 +22,6 @@ Values:
     
 Change from 3.1: None
 
-<br/>
 
 ## Attack Requirements (AR)
 
@@ -72,8 +71,6 @@ This metric describes the level of privileges an attacker must possess before su
 ### Change from 3.1:
 
 Basically no change - just small corrections in wording of documentation.
-
-<br />
 
 User Interaction (UI)
 Description:
