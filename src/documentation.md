@@ -2,14 +2,14 @@
 
 ## Attack Vector (AV)
 
-Description: This metric measures how a vulnerability can be exploited 
+Description: This metric measures how a vulnerability can be exploited
 
 Values:
 - Network(N) - component is remotely explotable, possible attacks extends these listed below
 -  Adjacent(A) - component can be manipulated from the same shared physical (eg. Bluetooth) or logical network(local IP subnet) or limited administrative domain (eg secure VPN)
 -  Local(L) - component can be manipulated by read/write/execute capablitiies (eg. using keyboard, ssh, opening malicious files by user)
 -  Physical(P) - requires attacker to phyically touch or manipulate component (eg attack via DMA)
-    
+
 Change from 3.1: None
 
 ## Attack Complexity (AC)
@@ -19,7 +19,7 @@ Description: This metric captures measurable actions that must be taken by the a
 Values:
 - Low(L) - attacker doesn't need to take any target-sepcific acction to explott the vulnerability
 - High(H) - attack will be only succesfull if attacker evades security-enhancing techniques, attacker need additional methods to bypass this security measures (eg attacker needs to perform additional attacks to obtain a secret)
-    
+
 Change from 3.1: None
 
 <br/>
@@ -93,9 +93,9 @@ SS - subsequent system
 ### Description:
 Impact to accuracy and trustworthiness of information -> it is impacted when an attacker modifies the data or rejects critical actions.
 ### Values:
-        High(H) <-> complete loss of integrity or protection
-        Low(L)  <-> possibility of modification but no serious impact
-        None(N) <-> no loss (in VS) or no loss or all integrity constrainted to VS (in SS)
+- High(H) <-> complete loss of integrity or protection
+- Low(L)  <-> possibility of modification but no serious impact
+- None(N) <-> no loss (in VS) or no loss or all integrity constrainted to VS (in SS)
 ### Change from 3.1:
 distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
 ## Availability (VA/SA)
@@ -103,8 +103,8 @@ distinction between Vulnerable and Subsequent System compared to just Integrity 
 ### Description:
 Impact to accessibility of information resources -> loss of networked services, attacks containging network bandwidth consumption, processor cycles, disc space
 ### Values:
-        High(H) <-> complete loss of availability, attacker can deny access to resources of both systems. Direct, serious consequences
-        Low(L)  <-> performance is reduced or there are interruptions in resource availability, no direct consequence
-        None(N) <-> no impact (in VS) or no impact or all availability impact constrainted to VS (in SS)
+- High(H) <-> complete loss of availability, attacker can deny access to resources of both systems. Direct, serious consequences
+- Low(L)  <-> performance is reduced or there are interruptions in resource availability, no direct consequence
+- None(N) <-> no impact (in VS) or no impact or all availability impact constrainted to VS (in SS)
 ### Change from 3.1:
 distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
