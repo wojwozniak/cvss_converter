@@ -92,7 +92,8 @@ Impact to accuracy and trustworthiness of information -> it is impacted when an 
         High(H) <-> complete loss of integrity or protection
         Low(L)  <-> possibility of modification but no serious impact
         None(N) <-> no loss (in VS) or no loss or all integrity constrainted to VS (in SS)
-Change from 3.1: distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
+### Change from 3.1:
+distinction between Vulnerable and Subsequent System compared to just Integrity metric in 3.1. Values + their meanings stay the same
 ## Availability (VA/SA)
 
 ### Description:
