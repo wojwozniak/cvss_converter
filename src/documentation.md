@@ -17,14 +17,60 @@ Attack Complexity (AC)
 Description:
 Values:
 Change from 3.1:
-Attack Requirements (AR)
-Description:
-Values:
-Change from 3.1:
-Privileges Required (PR)
-Description:
-Values:
-Change from 3.1:
+
+<br/>
+
+## Attack Requirements (AR)
+
+### Description: 
+
+Prerequisite deployment and execution conditions or variables of the vulnerable system that enable the attack.
+
+### Values: 
+
+- None (N) - can be executed under any / most instances of the vulnerability
+
+- Present (P) - many options: 
+  - there are some prerequisites needed that are outside of attacker control 
+  - race condition 
+  - network injection 
+  - multiple attacks needed against single target
+
+### Change from 3.1:
+
+It came from Attack Complexity - that metric has been split into Attack Complexity and Attack Requirements
+Similar to Low/High values there.
+
+
+## Privileges Required (PR)
+
+
+### Description:
+
+This metric describes the level of privileges an attacker must possess before successfully exploiting the vulnerability. The Base Score is greatest if no privileges are required. The list of possible values is presented in Table 3.
+
+### Values:
+- None (N)
+  - The attacker is unauthorized prior to the attack.
+  - No access to settings or files of the vulnerable system is needed.
+
+- Low (L)
+  - The attacker requires basic user capabilities.
+  - Can affect settings and files owned by a user.
+  - Alternatively, access is limited to non-sensitive resources.
+
+- High (H)
+  - The attacker requires significant privileges.
+  - Provides control over the vulnerable component.
+  - Allows access to component-wide settings and files.
+
+
+### Change from 3.1:
+
+Basically no change - just small corrections in wording of documentation.
+
+<br />
+
 User Interaction (UI)
 Description:
 Values:
