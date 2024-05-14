@@ -72,18 +72,29 @@ This metric describes the level of privileges an attacker must possess before su
 
 Basically no change - just small corrections in wording of documentation.
 
-User Interaction (UI)
-Description:
-Values:
-Change from 3.1:
+## User Interaction (UI)
+### Description: 
+Evaluates the degree of human involvement (other than the attacker) needed to successfully compromise the vulnerable system.
+### Values: 
+- None (N) - no interaction required.
+- Passive (P) - requires involuntary actions (opening links, downloading packages etc.).
+- Active (A) - requires conscious, voluntary interactions with the vulnerable system, actively subverting protections.
+Change from 3.1: 
+Previous version only described if user interaction is needed, didn't capture how much of it is needed. The values were: None (N) meaning no interaction required and Required (R) meaning the opposite. Therefore while converting a vector from 3.1 to 4.0 a None value will stay the same and a Required value will change into Passive, because we can't guarantee that exploitation of the system is not possible without volountary action. 
 # Impact metrics:
 #### Distinction between vulnerable and subsequent system:
 vulnerable system -> software application, operating system, module, driver, etc. (or possibly a hardware device)
 subsequent system -> any of those examples but also includes human safety.
-Confidentiality (VC/SC)
-Description:
-Values:
-Change from 3.1:
+## Confidentiality (VC/SC)
+### Description: 
+Gauges the extent of confidentiality loss resulting from a successfully exploited vulnerability in a system. Confidentiality refers to information access and disclosure to authorised and unauthorised users.
+### Values: 
+The values for VC and SC are the same with the exception that SC refers to a Subsequent System while VC refers to Vulnerable System.
+- High (H) - total loss of confidentiality or access to a part of restricted information that presents a direct, serious impact.
+- Low (L) - some loss of confidentiality, hacker doesn't have control over the amount, kind or what information is obtained. There is no direct, serious loss to the respective system.
+- None (N) - no loss of confidentiality in the respective system, in case of SC the loss of confidentiality constriced to the Vulnerable System.
+### Change from 3.1: 
+Distinction between Vulnerable and Subsequent System, previously just a Confidentiality metric. Values and their meanings stay the same.
 ## Integrity (VI/SI)
 VS - vulnerable system
 SS - subsequent system
