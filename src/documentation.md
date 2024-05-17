@@ -23,7 +23,7 @@ Values:
 Change from 3.1: None
 
 
-## Attack Requirements (AR)
+## Attack Requirements (AT)
 
 ### Description:
 
@@ -41,7 +41,7 @@ Prerequisite deployment and execution conditions or variables of the vulnerable 
 
 ### Change from 3.1:
 
-It came from Attack Complexity (so it is a new-old metric) - old AC has been split into AC and AR.
+It came from Attack Complexity (so it is a new-old metric) - old AC has been split into AC and AT.
 Values are similar to Low/High values from old AC.
 
 
