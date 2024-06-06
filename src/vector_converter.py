@@ -14,7 +14,7 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
 
     old_vector = cvss_vector.vector # extract the vector string from the form
     dic_old_vect = dict(x.split(":") for x in old_vector.split("/")) # get the properties
-    new_vector = 'CVSS:4.0' + '/' + '/'.join(key + ':' +  str(val) for key,val in list(dic_old_vect.items())[1:3])  
+    new_vector = 'CVSS:4.0' + '/' + '/'.join(key + ':' +  str(val) for key,val in list(dic_old_vect.items())[1:3])
     # start a vector with the CVSS:4.0
     if 'AT' in kwargs.keys():
         new_vector =  new_vector + '/' + ("{0}:{1}".format('AT', kwargs['AT']))
@@ -24,7 +24,7 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
             new_vector =  new_vector + '/' + "AT:N"
         elif dic_old_vect["AC"] == "H":
             new_vector =  new_vector + '/' + "AT:P"
-    new_vector +=  '/' + '/'.join(key + ':' +  str(val) for key,val in list(dic_old_vect.items())[3:4])  
+    new_vector +=  '/' + '/'.join(key + ':' +  str(val) for key,val in list(dic_old_vect.items())[3:4])
     if dic_old_vect["UI"] == "N":
         new_vector =  new_vector + '/' + "UI:" + str(dic_old_vect['UI'])
     else:
@@ -36,5 +36,6 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
             # hidden assumption: we assume the additional keys and values are in order
     return CVSS4(new_vector) # .vector returns a string, we return an object
 # VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-print(score_converter(C,VC = 'H', VI = 'H',VA = 'H', SC = 'N', SI = 'N', SA='N'))
-x = score_converter(C,VC = 'H', VI = 'H',VA = 'H', SC = 'N', SI = 'N', SA='N')
+#print(score_converter(C,VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N'))
+#x = score_converter(C,VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N')
+#print(x.base_score)
