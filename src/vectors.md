@@ -3,7 +3,7 @@
 ### Base score v3.1.
 9.8
 ### Znalezione
-Link z wytłumaczeniem: 
+Link z wytłumaczeniem:
 - https://www.first.org/cvss/v4-0/examples
 
 ### Base score v4.0.
@@ -45,28 +45,31 @@ brak
 
 # CVE-2020-1147
 ## CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2020-1147
 # CVE-2020-1472
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2020-1472
 # CVE-2020-14750
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2020-14750
 # CVE-2020-14882
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2020-14882
 # CVE-2020-16846
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 
+
+https://nvd.nist.gov/vuln/detail/CVE-2020-16846
 # CVE-2021-27877
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 
+https://nvd.nist.gov/vuln/detail/CVE-2021-27877
 # CVE-2021-44228
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2021-44228
 # CVE-2022-29464
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-
+https://nvd.nist.gov/vuln/detail/CVE-2022-29464
 # CVE-2023-27350
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 
