@@ -3,7 +3,9 @@
 ### Base score v3.1.
 9.8
 ### Znalezione
-Link: https://www.first.org/cvss/v4-0/examples
+Link z wytłumaczeniem: 
+- https://www.first.org/cvss/v4-0/examples
+
 ### Base score v4.0.
 9.3
 
