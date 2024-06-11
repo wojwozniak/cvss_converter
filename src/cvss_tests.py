@@ -6,4 +6,4 @@ df2 = df.loc[df['CVSS'] == 3.1]
 vector_list = df2['CVSS vector'].tolist()
 print(vector_list)
 for x in vector_list:
-    print(score_converter(CVSS3(x),VC = 'N', VI = 'N',VA = 'N', SC = 'H', SI = 'H', SA='N').base_score)
+    print(score_converter(CVSS3(x),VC = 'L', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N').base_score)
