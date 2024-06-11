@@ -76,6 +76,7 @@ https://nvd.nist.gov/vuln/detail/CVE-2022-29464
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 9.8
+
 Link z opisem:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-27350
 ### Base score v4.0.
@@ -85,6 +86,7 @@ Link z opisem:
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N
 ### Base score v3.1.
 7.5
+
 Link z opisem:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-27532
 ### Base score v4.0.
@@ -94,6 +96,7 @@ Link z opisem:
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 8.8
+
 Link z opisem:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-4863
 ### Base score v4.0.
@@ -103,6 +106,7 @@ Link z opisem:
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 8.8
+
 Link z opisem:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-5217
 ### Base score v4.0.
