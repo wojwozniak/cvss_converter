@@ -120,6 +120,8 @@ Remote code execution (php, nginx server)
 - Value Density (V): #todo j.w.
 - Vulnerability Response Effort (RE): X
 - Provider Urgency (U): X
+### Base score v4.0.
+8.9.
 
 
 
@@ -130,34 +132,39 @@ Remote code execution (php, nginx server)
 9.8.
 ### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2019-2729
+- https://rootedshell.medium.com/oracle-weblogic-server-deserialization-rce-bcab4d7d6eae
+- https://github.com/ruthlezs/CVE-2019-2729-Exploit
+- https://www.oracle.com/security-alerts/alert-cve-2019-2729.html
 ### Description
-
+Remote code execution in Oracle WebLogic Server Web Services
 ### CVSSv4
 #### Base metrics (from first.org link)
 ##### Exploitability
-- Attack Vector (AV):
-- Attack Complexity (AC):
-- Attack Requirements (AT):
-- Privileges Required (PR):
-- User Interaction (UI):
+- Attack Vector (AV): Network
+- Attack Complexity (AC): Low
+- Attack Requirements (AT): None
+- Privileges Required (PR): None
+- User Interaction (UI): None
 ##### Vulnerable System Impact Metrics
-- Confidentiality (VC):
-- Integrity (VI):
-- Availability (VA):
-#### Exploit maturity (E) - 
-#### Modified base metrics - 
+- Confidentiality (VC): High
+- Integrity (VI): High
+- Availability (VA): High
+#### Exploit maturity (E) - POC 
+#### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
-- Confidentiality Requirements (CR):
-- Integrity Requirements (IR):
-- Availability Requirements (AR):
+- Confidentiality Requirements (CR): High
+- Integrity Requirements (IR): High
+- Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S):
-- Automatable (AU):
-- Recovery (R):
-- Value Density (V):
-- Vulnerability Response Effort (RE):
-- Provider Urgency (U):
+- Safety (S): Negligible
+- Automatable (AU): Yes
+- Recovery (R): X
+- Value Density (V): Concentratred
+- Vulnerability Response Effort (RE): X
+- Provider Urgency (U): X
+### Base score v4.0.
+8.9.
 
 
 
@@ -168,34 +175,39 @@ Remote code execution (php, nginx server)
 10.0
 ### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2020-0796
+- https://sekurak.pl/cve-2020-0796-krytyczna-podatnosc-w-smbv3-mozna-bez-uwierzytelnienia-wykonac-dowolny-kod-na-windowsach-wlasnie-dostepny-jest-patch/
+- https://github.com/jamf/CVE-2020-0796-RCE-POC
+- https://github.com/danigargu/CVE-2020-0796
 ### Description
-
+Windows privilege escalation (from any level to highest)
 ### CVSSv4
 #### Base metrics (from first.org link)
 ##### Exploitability
-- Attack Vector (AV):
-- Attack Complexity (AC):
-- Attack Requirements (AT):
-- Privileges Required (PR):
-- User Interaction (UI):
+- Attack Vector (AV): Network
+- Attack Complexity (AC): Low
+- Attack Requirements (AT): None
+- Privileges Required (PR): None
+- User Interaction (UI): None
 ##### Vulnerable System Impact Metrics
-- Confidentiality (VC):
-- Integrity (VI):
-- Availability (VA):
-#### Exploit maturity (E) - 
-#### Modified base metrics - 
+- Confidentiality (VC): High
+- Integrity (VI): High
+- Availability (VA): High
+#### Exploit maturity (E) - High
+#### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
-- Confidentiality Requirements (CR):
-- Integrity Requirements (IR):
-- Availability Requirements (AR):
+- Confidentiality Requirements (CR): High
+- Integrity Requirements (IR): High
+- Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S):
-- Automatable (AU):
-- Recovery (R):
-- Value Density (V):
-- Vulnerability Response Effort (RE):
-- Provider Urgency (U):
+- Safety (S): Present (#todo full windows access (and windows is used everywhere))
+- Automatable (AU): Yes
+- Recovery (R): X
+- Value Density (V): Concentrated
+- Vulnerability Response Effort (RE): X
+- Provider Urgency (U): X (#Todo ale chyba red)
+### Base score v4.0.
+10.0.
 
 
 
