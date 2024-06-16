@@ -2,46 +2,201 @@
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 9.8
-### Znalezione
-Link z wytłumaczeniem:
+### Link with description
 - https://www.first.org/cvss/v4-0/examples
+- https://www.twingate.com/blog/tips/cve-2014-6271
+- https://cybersecurity.att.com/blogs/labs-research/attackers-exploiting-shell-shock-cve-2014-6271-in-the-wild
+- https://en.wikipedia.org/wiki/Shellshock_(software_bug)
 
+### Description
+Shellshock could enable an attacker to cause Bash to execute arbitrary commands and gain unauthorized access to the app.
+
+### CVSSv4
+#### Base metrics (from first.org link)
+##### Exploitability
+- Attack Vector (AV): Network
+- Attack Complexity (AC): Low
+- Attack Requirements (AT): None
+- Privileges Required (PR): None
+- User Interaction (UI): None
+##### Vulnerable System Impact Metrics
+- Confidentiality (VC): High
+- Integrity (VI): High
+- Availability (VA): High
+#### Exploit maturity (E) - Attacked
+#### Modified base metrics - not changed
+#### Enviromental metrics
+##### Security
+- Confidentiality Requirements (CR): High
+- Integrity Requirements (IR): High
+- Availability Requirements (AR): High 
+#### Supplemental metrics:
+- Safety (S): Negligible (mostly used to create DDoS and vulnerability scanning botnets)
+- Automatable (AU): Yes 
+- Recovery (R): X (not defined)
+- Value Density (V): Concentrated (full access to bash)
+- Vulnerability Response Effort (RE): X (not defined)
+- Provider Urgency (U): X (not defined) (But should be red (?))
 ### Base score v4.0.
-9.3
+9.3.
+
+
+
 
 # CVE-2017-3066
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 9.8.
-### Nie znalezione
-Link z opisem:
+
+### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2017-3066
 - https://medium.com/@lucideus/cve-2017-3066-adobe-coldfusion-blazeds-java-object-deserialisation-rce-lucideus-research-64f31197757e
-### Base score v4.0.
-brak
+### Description
+
+### CVSSv4
+#### Base metrics (from first.org link)
+##### Exploitability
+- Attack Vector (AV):
+- Attack Complexity (AC):
+- Attack Requirements (AT):
+- Privileges Required (PR):
+- User Interaction (UI):
+##### Vulnerable System Impact Metrics
+- Confidentiality (VC):
+- Integrity (VI):
+- Availability (VA):
+#### Exploit maturity (E) - 
+#### Modified base metrics - 
+#### Enviromental metrics
+##### Security
+- Confidentiality Requirements (CR):
+- Integrity Requirements (IR):
+- Availability Requirements (AR):
+#### Supplemental metrics:
+- Safety (S):
+- Automatable (AU):
+- Recovery (R):
+- Value Density (V):
+- Vulnerability Response Effort (RE):
+- Provider Urgency (U):
+
+
+
 
 # CVE-2019-11043
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 9.8. -> 8.7.
-### Nie znalezione
-Link z opisem:
+
+### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2019-11043
-### Base score v4.0.
-brak
+### Description
+
+### CVSSv4
+#### Base metrics (from first.org link)
+##### Exploitability
+- Attack Vector (AV):
+- Attack Complexity (AC):
+- Attack Requirements (AT):
+- Privileges Required (PR):
+- User Interaction (UI):
+##### Vulnerable System Impact Metrics
+- Confidentiality (VC):
+- Integrity (VI):
+- Availability (VA):
+#### Exploit maturity (E) - 
+#### Modified base metrics - 
+#### Enviromental metrics
+##### Security
+- Confidentiality Requirements (CR):
+- Integrity Requirements (IR):
+- Availability Requirements (AR):
+#### Supplemental metrics:
+- Safety (S):
+- Automatable (AU):
+- Recovery (R):
+- Value Density (V):
+- Vulnerability Response Effort (RE):
+- Provider Urgency (U):
+
+
+
 
 # CVE-2019-2729
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 9.8.
-### Nie znalezione
-Link z opisem:
+### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2019-2729
-### Base score v4.0.
-brak
+### Description
+
+### CVSSv4
+#### Base metrics (from first.org link)
+##### Exploitability
+- Attack Vector (AV):
+- Attack Complexity (AC):
+- Attack Requirements (AT):
+- Privileges Required (PR):
+- User Interaction (UI):
+##### Vulnerable System Impact Metrics
+- Confidentiality (VC):
+- Integrity (VI):
+- Availability (VA):
+#### Exploit maturity (E) - 
+#### Modified base metrics - 
+#### Enviromental metrics
+##### Security
+- Confidentiality Requirements (CR):
+- Integrity Requirements (IR):
+- Availability Requirements (AR):
+#### Supplemental metrics:
+- Safety (S):
+- Automatable (AU):
+- Recovery (R):
+- Value Density (V):
+- Vulnerability Response Effort (RE):
+- Provider Urgency (U):
+
+
+
 
 # CVE-2020-0796
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
+### Base score v3.1.
+10.0
+### Link with description
+- https://nvd.nist.gov/vuln/detail/CVE-2020-0796
+### Description
+
+### CVSSv4
+#### Base metrics (from first.org link)
+##### Exploitability
+- Attack Vector (AV):
+- Attack Complexity (AC):
+- Attack Requirements (AT):
+- Privileges Required (PR):
+- User Interaction (UI):
+##### Vulnerable System Impact Metrics
+- Confidentiality (VC):
+- Integrity (VI):
+- Availability (VA):
+#### Exploit maturity (E) - 
+#### Modified base metrics - 
+#### Enviromental metrics
+##### Security
+- Confidentiality Requirements (CR):
+- Integrity Requirements (IR):
+- Availability Requirements (AR):
+#### Supplemental metrics:
+- Safety (S):
+- Automatable (AU):
+- Recovery (R):
+- Value Density (V):
+- Vulnerability Response Effort (RE):
+- Provider Urgency (U):
+
+
+
 
 # CVE-2020-1147
 ## CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H
