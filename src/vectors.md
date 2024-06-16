@@ -87,36 +87,39 @@ Remote code execution vulnerability in Adobe Coldfusion caused by unsafe deseria
 # CVE-2019-11043
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
-9.8. -> 8.7.
+9.8.
 ### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2019-11043
+- https://github.com/kriskhub/CVE-2019-11043
+- https://medium.com/@knownsec404team/php-fpm-remote-code-execution-vulnerability-cve-2019-11043-analysis-35fd605dd2dc
 ### Description
+Remote code execution (php, nginx server)
 ### CVSSv4
 #### Base metrics (from first.org link)
 ##### Exploitability
-- Attack Vector (AV):
-- Attack Complexity (AC):
-- Attack Requirements (AT):
-- Privileges Required (PR):
-- User Interaction (UI):
+- Attack Vector (AV): Network
+- Attack Complexity (AC): Low
+- Attack Requirements (AT): None
+- Privileges Required (PR): None
+- User Interaction (UI): None
 ##### Vulnerable System Impact Metrics
-- Confidentiality (VC):
-- Integrity (VI):
-- Availability (VA):
-#### Exploit maturity (E) - 
-#### Modified base metrics - 
+- Confidentiality (VC): High
+- Integrity (VI): High
+- Availability (VA): High
+#### Exploit maturity (E) - POC 
+#### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
-- Confidentiality Requirements (CR):
-- Integrity Requirements (IR):
-- Availability Requirements (AR):
+- Confidentiality Requirements (CR): High
+- Integrity Requirements (IR): High
+- Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S):
-- Automatable (AU):
-- Recovery (R):
-- Value Density (V):
-- Vulnerability Response Effort (RE):
-- Provider Urgency (U):
+- Safety (S): Negligible
+- Automatable (AU): Yes
+- Recovery (R): X
+- Value Density (V): #todo j.w.
+- Vulnerability Response Effort (RE): X
+- Provider Urgency (U): X
 
 
 
