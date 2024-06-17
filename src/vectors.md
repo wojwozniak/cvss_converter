@@ -432,7 +432,7 @@ Attacker can run malicious code on PaperCut Application Server. In worst case th
 - Confidentiality Requirements(CR): H
 - Integrity Requirements(IR): H
 - Availability Requirements(AR): H
-- Modified base metrics:(not defined)
+- Modified base metrics: X (not defined)
 
 #### Sumpelental Metrics:
 - Safety(S): P; the attacker can do anything from the system 
@@ -463,7 +463,7 @@ Attacker could gain access to plaintext credentials
 - Confidentiality Requirements(CR): H
 - Integrity Requirements(IR): L
 - Availability Requirements(AR): L
-- Modified base metrics:(not defined)
+- Modified base metrics: X (not defined)
 
 #### Sumpelental Metrics:
 - Safety(S): P; as attacker can gain access to credentials they could also perform remote command execution and do anything having local system privileges on a remote server
@@ -497,7 +497,7 @@ Attacker overflowing buffer memory could execute arbitrary code or cause DoS con
 - Integrity Requirements(IR):H
 - Availability Requirements(AR):H
 - Modified base metrics:
-    - User Interaction(UI): P 
+    - User Interaction(UI): P; opening malicious WebP image by user could lead to exploit
 
 #### Sumpelental Metrics:
 - Safety(S): P; attacker could gain acces to victims device and run code
@@ -528,7 +528,7 @@ Attacker could execute arbitrary code on the target system
 - Integrity Requirements(IR):H
 - Availability Requirements(AR):H
 - Modified base metrics:
-    - User Interaction(UI): P 
+    - User Interaction(UI): P; opening malicious HTML page by user could lead to exploit
 
 #### Sumpelental Metrics:
 - Safety(S):P, attacker could gain access to the vulnerable system
