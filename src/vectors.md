@@ -420,27 +420,27 @@ Additional links:
 ### Base score v3.1.
 9.8
 
-### Link z opisem:
+### Link with description:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-27350
 
 ### CVSSv4
 #### Threat metrics:
-- Exploit Maturity(E): Attacked; attacks were reported, p-o-c code available.
+- Exploit Maturity(E): Attacked; attacks were reported, Proof-of-Concept code available
 
 #### Environmental metrics:
-Attacker can run malicous code on PaperCut Application Server. In worst case they can gain acces to all data and the entire system.
+Attacker can run malicious code on PaperCut Application Server. In worst case they can gain access to all of  the data and the entire system
 - Confidentiality Requirements(CR): H
 - Integrity Requirements(IR): H
 - Availability Requirements(AR): H
-- Modified base metrics: Not Defined (X)
+- Modified base metrics: X (not defined)
 
 #### Sumpelental Metrics:
-- Safety(S): P; the attacker can do anything from the system.
-- Automatable(AU): Y; the exploitative code can be run remotely and acces any vulnerable target.
-- Recovery(R): I; attacker could make irrecoverable changes.
-- Value Density(V): C; attacker can gain acces to the entire system.
-- Vulnerability Response Effort(RE): M; consumers nned to update the software.
-- Provider Urgency(U): R; PaperCut confirmed vulnerability as urgent.
+- Safety(S): P; the attacker can do anything from the system 
+- Automatable(AU): Y; the exploitative code can be run remotely and access any vulnerable target
+- Recovery(R):I; attacker could make irrecoverable changes
+- Value Density(V):C; attacker can gain access to the entire system
+- Vulnerability Response Effort(RE):M; consumers needed to update the software
+- Provider Urgency(U):R; PaperCut confirmed vulnerability as urgent
 
 #### Base score
 9.3
@@ -451,27 +451,27 @@ Attacker can run malicous code on PaperCut Application Server. In worst case the
 ### Base score v3.1.
 7.5
 
-### Link z opisem:
+### Link with description:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-27532
 
 ### CVSSv4
 #### Threat metrics:
-- Exploit Maturity(E): P; Proof-of-Concept code exist, no attacks reported.
+- Exploit Maturity(E): P; Proof-of-Concept code exist, no attacks reported
 
 #### Environmental metrics:
-Attacker could gain access to plaintext credentials.
+Attacker could gain access to plaintext credentials
 - Confidentiality Requirements(CR): H
 - Integrity Requirements(IR): L
 - Availability Requirements(AR): L
-- Modified base metrics: Not Defined (X)
+- Modified base metrics: X (not defined)
 
 #### Sumpelental Metrics:
-- Safety(S): P; as attacker can gain access to credentials they could also perform remote command execution and do anything having local system privileges on a remote server.
-- Automatable(AU): Y; the exploitative code can be run remotely to access credentials.
+- Safety(S): P; as attacker can gain access to credentials they could also perform remote command execution and do anything having local system privileges on a remote server
+- Automatable(AU): Y; the exploitative code can be run remotely to access credentials
 - Recovery(R): X*
-- Value Density(V): C; attacker could have gain to database with plaintext credentials and then use them to obtrain RCE on vulnerable device.
+- Value Density(V):C; attacker could have gain to database with plaintext credentials and then use them to obtrain RCE on vulnerable device
 - Vulnerability Response Effort(RE): X*
-- Provider Urgency(U): A; veeam published a patch after getting P-o-C.
+- Provider Urgency(U): A; Veeam published a patch right after getting P-o-C
 
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 
@@ -484,27 +484,28 @@ Attacker could gain access to plaintext credentials.
 ### Base score v3.1.
 8.8
 
-### Link z opisem:
+### Link with description:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-4863
 
 ### CVSSv4
 #### Threat metrics:
-- Exploit Maturity(E) :A; Google marked vulnerability as exploited in the wild.
+- Exploit Maturity(E):A; Google marked vulnerability as exploited in the wild
 
 #### Environmental metrics:
-Attacker overflowing buffer memory could execute arbitrary code or cause DoS condition.
-- Confidentiality Requirements(CR) :H
-- Integrity Requirements(IR): H
-- Availability Requirements(AR): H
-- Modified base metrics: Not Defined (X)
+Attacker overflowing buffer memory could execute arbitrary code or cause DoS condition
+- Confidentiality Requirements(CR):H
+- Integrity Requirements(IR):H
+- Availability Requirements(AR):H
+- Modified base metrics:
+    - User Interaction(UI): P; opening malicious WebP image by user could lead to exploit
 
 #### Sumpelental Metrics:
-- Safety(S): P; attacker could gain access to victims device and run code.
-- Automatable(AU): Y; malicious image could be simply sent to user by email or downloaded by user from website.
-- Recovery(R): I; system could have suffer from DoS attack or irrecoverable lost data.
-- Value Density(V): C; attacker could gain access to device of anyone who opened WebP file.
-- Vulnerability Response Effort(RE): M; update of any app that use WebP image was required.
-- Provider Urgency(U): R; chromium stated that security severity is critical and vulnerability was urgently patches after the inital report.
+- Safety(S): P; attacker could gain acces to victims device and run code
+- Automatable(AU): Y; malicious image could be simply sent to user by email or downloaded by user from website
+- Recovery(R): I; system could have suffer from DoS attack or irrecoverable lost data
+- Value Density(V): C; attacker could gain access to device of anyone who opened WebP file
+- Vulnerability Response Effort(RE): M; update of any app that use WebP image was required
+- Provider Urgency(U): R; chromium stated that security severity is critical and vulnerability was urgently patches after the inital report
 
 #### Base score
 9.3
@@ -514,27 +515,28 @@ Attacker overflowing buffer memory could execute arbitrary code or cause DoS con
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
 ### Base score v3.1.
 8.8
-### Link z opisem:
+### Link with description:
 - https://nvd.nist.gov/vuln/detail/CVE-2023-5217
 
 ### CVSSv4
 #### Threat metrics:
-- Exploit Maturity(E): A; Google stated that exploit exists in the wild.
+- Exploit Maturity(E):A; Google stated that exploit exists in the wild
 
 #### Environmental metrics:
-Attacker could execute arbitrary code on the target system.
-- Confidentiality Requirements(CR): H
-- Integrity Requirements(IR): H
-- Availability Requirements(AR): H
-- Modified base metrics: Not Defined (X)
+Attacker could execute arbitrary code on the target system
+- Confidentiality Requirements(CR):H
+- Integrity Requirements(IR):H
+- Availability Requirements(AR):H
+- Modified base metrics:
+    - User Interaction(UI): P; opening malicious HTML page by user could lead to exploit
 
 #### Sumpelental Metrics:
-- Safety(S):P, attacker could gain access to the vulnerable system.
-- Automatable(AU):Y; attacker could gain remote access via crafted HTML page.
-- Recovery(R): I, attacker could gain access to the system.
-- Value Density(V): C; affected was everyone who eg.opened attacker HTML page on Chrome.
-- Vulnerability Response Effort(RE): M; all software using libvpx needed to updated.
-- Provider Urgency(U): A; Chromium security severity: High.
+- Safety(S):P, attacker could gain access to the vulnerable system
+- Automatable(AU):Y; attacker could gain remote access via crafted HTML page
+- Recovery(R): I, attacker could gain access to the system
+- Value Density(V): C; affected was everyone who eg.opened attacker HTML page on chrome
+- Vulnerability Response Effort(RE): M; all software using libvpx needed to updated
+- Provider Urgency(U):A; Chromium security severity: High
 
 #### Base score
 9.3
