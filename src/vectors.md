@@ -29,10 +29,10 @@ Shellshock could enable an attacker to cause Bash to execute arbitrary commands 
 ##### Security
 - Confidentiality Requirements (CR): High
 - Integrity Requirements (IR): High
-- Availability Requirements (AR): High 
+- Availability Requirements (AR): High
 #### Supplemental metrics:
 - Safety (S): Negligible (mostly used to create DDoS and vulnerability scanning botnets)
-- Automatable (AU): Yes 
+- Automatable (AU): Yes
 - Recovery (R): X (not defined)
 - Value Density (V): Concentrated (full access to bash)
 - Vulnerability Response Effort (RE): X (not defined)
@@ -106,7 +106,7 @@ Remote code execution (php, nginx server)
 - Confidentiality (VC): High
 - Integrity (VI): High
 - Availability (VA): High
-#### Exploit maturity (E) - POC 
+#### Exploit maturity (E) - POC
 #### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
@@ -149,7 +149,7 @@ Remote code execution in Oracle WebLogic Server Web Services
 - Confidentiality (VC): High
 - Integrity (VI): High
 - Availability (VA): High
-#### Exploit maturity (E) - POC 
+#### Exploit maturity (E) - POC
 #### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
@@ -305,7 +305,7 @@ Attacker can remotely bypass security and gain admin privileges so they can comp
 - Confidentiality Requirements (CR) - High (H).
 - Integrity Requirements (IR) - High (H).
 - Availability Requirements (AR) - High (H).
-- Modified base metrics - Not Defined (X). 
+- Modified base metrics - Not Defined (X).
 ### Supplemental Metrics:
 - Safety (S) - Present (P); the server could be completely compromised leading to catastrophic outcomes.
 - Automatable (AU) - Yes (Y); p-o-c code could be auotmated to target multiple servers.
@@ -321,20 +321,99 @@ https://nvd.nist.gov/vuln/detail/CVE-2020-14882
 
 
 # CVE-2020-16846
+shell injections
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-
-
+## CVSSv4
+### Threat metrics:
+- Exploit Maturity (EM) - POC **
+** - http://packetstormsecurity.com/files/160039/SaltStack-Salt-REST-API-Arbitrary-Command-Execution.html
+### Environmental Metrics:
+- Confidentiality Requirements (CR) - High(H); you can learn a lot of info just from the shell
+- Integrity Requirements (IR) - High(H); lots of things can be deleted
+- Availability Requirements (AR) - High(H); servers down
+- Modified base metrics - Not Defined (X)
+### Supplemental Metrics:
+- Safety (S) - Negligible(N); access to the shell, might be on important servers; should not be critical
+- Automatable (AU) - Yes(Y)
+- Recovery (R) - Not Defined (X)*
+- Value Density (V) - Concentrated(C); shell access
+- Vulnerability Response Effort (RE) - Not Defined (X)*
+- Provider Urgency - Amber
+* - no proof of attack, we cannot realistically estimate what would happen
 https://nvd.nist.gov/vuln/detail/CVE-2020-16846
 # CVE-2021-27877
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-
-https://nvd.nist.gov/vuln/detail/CVE-2021-27877
+## CVSSv4
+remote code execution
+### Threat metrics:
+- Exploit Maturity (EM) - POC, https://www.rapid7.com/db/modules/exploit/multi/veritas/beagent_sha_auth_rce/
+### Environmental Metrics:
+- Confidentiality Requirements (CR) - High (H) ^
+- Integrity Requirements (IR) - High (H) ^
+- Availability Requirements (AR) - High (H) ^
+^ - this is the exploitation in which remote code execution can happen, it compromises everything, no guarantees remaining.
+- Modified base metrics - Not Defined (X)
+### Supplemental Metrics:
+- Safety (S) - Present(P); this could be used to handle medical data; if compromised - catastrophic effects
+- Automatable (AU) - Yes (Y), POC is an automated script
+- Recovery (R) - Not Defined (X)*
+- Value Density (V) - Concentrated (C); remote code execution
+- Vulnerability Response Effort (RE) - Not Defined (X) *
+- Provider Urgency (U) - Red they recognized the danger **
+* - no proof of attack, we cannot realistically estimate what would happen
+** - https://www.veritas.com/content/support/en_US/security/VTS21-001#issue1
+additional links:
+- https://www.cvedetails.com/cve/CVE-2021-27877/
+- https://nvd.nist.gov/vuln/detail/CVE-2021-27877
+- http://packetstormsecurity.com/files/168506/Veritas-Backup-Exec-Agent-Remote-Code-Execution.html
 # CVE-2021-44228
+This exploit is known as Log4Shell, also known as the Log4j vulnerability, is a remote code execution (RCE) vulnerability in some versions of the Apache Log4j 2 Java library. Log4Shell allows hackers to run virtually any code they want on affected systems, essentially granting them total control of apps and devices.
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H
-https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+## CVSSv4
+### Threat metrics:
+- Exploit Maturity (EM) - Attacked (A); ex. ransomware group Conti ^
+^ - https://www.ibm.com/topics/log4shell#:~:text=IBM-,What%20is%20Log4Shell%3F,control%20of%20apps%20and%20devices.
+### Environmental Metrics:
+- Confidentiality Requirements (CR) - High(H) **
+- Integrity Requirements (IR) - High(H) **
+- Availability Requirements (AR) - High(H) ***
+- Modified base metrics - Not Defined (X).
+** - major attacks started happening after the exploit and fix has been published, meaning that if a company did not fix it immediately, they were deemed not trustworthy
+*** - remote code execution, servers may go down
+### Supplemental Metrics:
+- Safety (S) - Present (P); may lead to loss of life if attacked
+- Automatable (AU) - Yes (Y); botnets have been automatically scanning for it
+- Recovery (R) - Irrecoverable (I); was used for ransomware
+- Value Density (V) - Concentrated(C); access to server
+- Provider Urgency (U) - Red; got fixed very fast
+- Vulnerability Response Effort (RE) - Moderate(M); you had to perform an update
+Additional links:
+- https://nvd.nist.gov/vuln/detail/CVE-2021-44228
+- https://cert-portal.siemens.com/productcert/pdf/ssa-714170.pdf
 # CVE-2022-29464
+remote code execution (WSO2)
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H
-https://nvd.nist.gov/vuln/detail/CVE-2022-29464
+## CVSSv4
+### Threat metrics:
+- Exploit Maturity (EM) - Attacked; "Trend reported active exploitation of CVE-2022-29464 by actors who used the vulnerability to install crypto miners and backdoors through Cobalt Strike." *
+* - https://www.hackthebox.com/blog/cve-2022-29464-explained#mcetoc_1hv2blqlt6q
+### Environmental Metrics:
+- Confidentiality Requirements (CR) - High(H) ^
+- Integrity Requirements (IR) - High(H) ^
+- Availability Requirements (AR) - High(H) ^
+^ - rce
+- Modified base metrics - Not Defined (X).
+### Supplemental Metrics:
+- Safety (S) - Present(P); WSO2 Healthcare
+- Automatable (AU) - Yes (Y); look at ***
+- Provider Urgency (U) - Red
+- Recovery (R) - Irrecovable(I)
+- Value Density (V) - Concentrated (C)
+- Vulnerability Response Effort (RE) - Moderate; several changes to config files
+Additional links:
+- https://nvd.nist.gov/vuln/detail/CVE-2022-29464
+- https://www.broadcom.com/support/security-center/attacksignatures/detail?asid=33699
+- https://github.com/hakivvi/CVE-2022-29464 ***
 
 # CVE-2023-27350
 ## CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H

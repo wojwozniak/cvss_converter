@@ -1,6 +1,6 @@
 from cvss import CVSS3, CVSS4
 from itertools import islice
-C = CVSS3('CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H')
+C = CVSS3('CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H')
 
 def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
     # We assume the cvss_vector from 3.1 will have the standard layout
