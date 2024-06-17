@@ -32,7 +32,7 @@ Shellshock could enable an attacker to cause Bash to execute arbitrary commands 
 - Availability Requirements (AR): High
 #### Supplemental metrics:
 - Safety (S): Negligible (mostly used to create DDoS and vulnerability scanning botnets)
-- Automatable (AU): Yes
+- Automatable (AU): Yes (script from link can be used)
 - Recovery (R): X (not defined)
 - Value Density (V): Concentrated (full access to bash)
 - Vulnerability Response Effort (RE): X (not defined)
@@ -54,7 +54,7 @@ Shellshock could enable an attacker to cause Bash to execute arbitrary commands 
 ### Description
 Remote code execution vulnerability in Adobe Coldfusion caused by unsafe deserialisation of java objects.
 ### CVSSv4
-#### Base metrics (from first.org link)
+#### Base metrics (from links)
 ##### Exploitability
 - Attack Vector (AV): Network
 - Attack Complexity (AC): Low
@@ -76,7 +76,7 @@ Remote code execution vulnerability in Adobe Coldfusion caused by unsafe deseria
 - Safety (S): Negligible (ColdFusion is used to create websites)
 - Automatable (AU): Yes (example in github link)
 - Recovery (R): X
-- Value Density (V): Concentrated
+- Value Density (V): Concentrated (remote code execution, we can get anything)
 - Vulnerability Response Effort (RE): X
 - Provider Urgency (U): X
 ### Base score v4.0.
@@ -95,7 +95,7 @@ Remote code execution vulnerability in Adobe Coldfusion caused by unsafe deseria
 ### Description
 Remote code execution (php, nginx server)
 ### CVSSv4
-#### Base metrics (from first.org link)
+#### Base metrics (from links)
 ##### Exploitability
 - Attack Vector (AV): Network
 - Attack Complexity (AC): Low
@@ -114,10 +114,10 @@ Remote code execution (php, nginx server)
 - Integrity Requirements (IR): High
 - Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S): Negligible
-- Automatable (AU): Yes
+- Safety (S): Negligible (Tech used mostly for websites)
+- Automatable (AU): Yes (Example in github link)
 - Recovery (R): X
-- Value Density (V): #todo j.w.
+- Value Density (V): (remote code execution)
 - Vulnerability Response Effort (RE): X
 - Provider Urgency (U): X
 ### Base score v4.0.
@@ -138,7 +138,7 @@ Remote code execution (php, nginx server)
 ### Description
 Remote code execution in Oracle WebLogic Server Web Services
 ### CVSSv4
-#### Base metrics (from first.org link)
+#### Base metrics (from links)
 ##### Exploitability
 - Attack Vector (AV): Network
 - Attack Complexity (AC): Low
@@ -157,10 +157,10 @@ Remote code execution in Oracle WebLogic Server Web Services
 - Integrity Requirements (IR): High
 - Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S): Negligible
-- Automatable (AU): Yes
+- Safety (S): Negligible (Tech for websites)
+- Automatable (AU): Yes (Example on github link)
 - Recovery (R): X
-- Value Density (V): Concentratred
+- Value Density (V): Concentratred (Remote code execution)
 - Vulnerability Response Effort (RE): X
 - Provider Urgency (U): X
 ### Base score v4.0.
@@ -181,7 +181,7 @@ Remote code execution in Oracle WebLogic Server Web Services
 ### Description
 Windows privilege escalation (from any level to highest)
 ### CVSSv4
-#### Base metrics (from first.org link)
+#### Base metrics (from links)
 ##### Exploitability
 - Attack Vector (AV): Network
 - Attack Complexity (AC): Low
@@ -200,12 +200,12 @@ Windows privilege escalation (from any level to highest)
 - Integrity Requirements (IR): High
 - Availability Requirements (AR): High
 #### Supplemental metrics:
-- Safety (S): Present (#todo full windows access (and windows is used everywhere))
-- Automatable (AU): Yes
+- Safety (S): Present (full windows access (and windows is used everywhere))
+- Automatable (AU): Yes (examples in github links)
 - Recovery (R): X
-- Value Density (V): Concentrated
+- Value Density (V): Concentrated (full access to system)
 - Vulnerability Response Effort (RE): X
-- Provider Urgency (U): X (#Todo ale chyba red)
+- Provider Urgency (U): X
 ### Base score v4.0.
 10.0.
 
