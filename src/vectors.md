@@ -231,7 +231,7 @@ This vulnerability allows for the attacker to execute code with the same rights 
 - Provider Urgency (U) - Amber; based on the exploitability assessment provided by Microsoft.
 - Recovery (R) - Not Defined (X)*.
 - Value Density (V) - Concentrated (C); in the case of attacks on users with apt rights.
-- Vulnerability Response Effort (RE) - Not Defined (X)*.
+- Vulnerability Response Effort (RE) - Not Defined (X)*.   
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 ### Source:
 https://nvd.nist.gov/vuln/detail/CVE-2020-1147
@@ -258,7 +258,7 @@ Allows for attackers to bypass security constraints (gain the credentials of the
 - Provider Urgency (U) - Not Defined (X); the Samba security team was unaware of his vulnerability before Microsoft published an announcement including a patch that fixed it.
 - Recovery (R) - Not Defined (X)*.
 - Value Density (V) - Concentrated (C); the attacker gains access to the whole domain.
-- Vulnerability Response Effort (RE) - Not Defined (X)*.
+- Vulnerability Response Effort (RE) - Not Defined (X)*.   
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 ### Source:
 https://nvd.nist.gov/vuln/detail/CVE-2020-1472
@@ -284,7 +284,7 @@ Related to the below vulnerability (CVE-2020-14882). It is basically the same th
 - Provider Urgency (U) - Not Defined (X); Oracle never mentioned the urgency.
 - Recovery (R) - Not Defined (X)*.
 - Value Density (V) - Concentrated (C); the attacker gains access to the whole server.
-- Vulnerability Response Effort (RE) - Not Defined (X)*.
+- Vulnerability Response Effort (RE) - Not Defined (X)*.   
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 ### Source:
 https://nvd.nist.gov/vuln/detail/CVE-2020-14750
@@ -312,7 +312,7 @@ Attacker can remotely bypass security and gain admin privileges so they can comp
 - Provider Urgency (U) - Not Defined (X); Oracle never mentioned the urgency.
 - Recovery (R) - Not Defined (X)*.
 - Value Density (V) - Concentrated (C); the attacker gains access to the whole server.
-- Vulnerability Response Effort (RE) - Not Defined (X)*.
+- Vulnerability Response Effort (RE) - Not Defined (X)*.   
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 ### Source:
 https://nvd.nist.gov/vuln/detail/CVE-2020-14882
