@@ -192,7 +192,7 @@ Windows privilege escalation (from any level to highest)
 - Confidentiality (VC): High
 - Integrity (VI): High
 - Availability (VA): High
-#### Exploit maturity (E) - High
+#### Exploit maturity (E) - Attacked
 #### Modified base metrics - not changed
 #### Enviromental metrics
 ##### Security
