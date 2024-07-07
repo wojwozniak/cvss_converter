@@ -36,8 +36,8 @@ def score_converter(cvss_vector: CVSS3, **kwargs) -> CVSS4:
         if key in add:
             new_vector += "/" + ("{0}:{1}".format(key, val))
             # hidden assumption: we assume the additional keys and values are in order
-    return CVSS4(new_vector).vector# .vector returns a string, we return an object
+    return CVSS4(new_vector)# .vector returns a string, we return an object
 # VC:H/VI:H/VA:H/SC:N/SI:N/SA:N
-print(score_converter(C,VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N'))
+print(score_converter(C, SC = 'N', SI = 'N', SA='N'))
 #x = score_converter(C,VC = 'N', VI = 'N',VA = 'N', SC = 'N', SI = 'N', SA='N')
 #print(x.base_score)
