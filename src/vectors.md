@@ -175,7 +175,6 @@ Remote code execution in Oracle WebLogic Server Web Services
 10.0
 ### Link with description
 - https://nvd.nist.gov/vuln/detail/CVE-2020-0796
-- https://sekurak.pl/cve-2020-0796-krytyczna-podatnosc-w-smbv3-mozna-bez-uwierzytelnienia-wykonac-dowolny-kod-na-windowsach-wlasnie-dostepny-jest-patch/
 - https://github.com/jamf/CVE-2020-0796-RCE-POC
 - https://github.com/danigargu/CVE-2020-0796
 ### Description
