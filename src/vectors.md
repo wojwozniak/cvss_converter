@@ -475,7 +475,7 @@ Attacker could gain access to plaintext credentials
 *Based on the available information I can not define those metrics. There were no recorded attacks so there is no information on recovery and response to exploitation of this vulnerability.
 
 #### Base score
-7.6
+8.7
 
 
 # CVE-2023-4863
